@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JC INK TATTOO — Blessed Tattoo Studio</title>
+  <meta name="description" content="JC INK TATTOO is a Neo Traditional tattoo artist at Blessed Tattoo Studio in Houston, TX. Featured Artist." />
+  <link rel="canonical" href="https://eternowebstudio.com/blessedtattoohtx/artists/thejcink.html" />
+  <meta property="og:title" content="JC INK TATTOO — Blessed Tattoo Studio" />
+  <meta property="og:description" content="JC INK TATTOO is a Neo Traditional tattoo artist at Blessed Tattoo Studio in Houston, TX. Featured Artist." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eternowebstudio.com/blessedtattoohtx/artists/thejcink.html" />
+  <meta property="og:image" content="https://eternowebstudio.com/blessedtattoohtx/img/thejcink_1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="JC INK TATTOO — Blessed Tattoo Studio" />
+  <meta name="twitter:image" content="https://eternowebstudio.com/blessedtattoohtx/img/thejcink_1.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --black: #0a0a0a; --surface: #111111; --surface-2: #161616;
+    --gold: #C9A84C; --gold-light: #e2c47a; --gold-dim: rgba(201,168,76,0.12);
+    --white: #f5f5f0; --dim: #888; --border: rgba(201,168,76,0.15);
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Inter', 'Helvetica Neue', sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { background: var(--black); color: var(--white); font-family: var(--sans); font-size: 16px; line-height: 1.7; overflow-x: hidden; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.4rem 2.5rem;
+    transition: background 0.4s ease, backdrop-filter 0.4s ease;
+  }
+  nav.scrolled {
+    background: rgba(10,10,10,0.93); backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border);
+  }
+  .nav-logo { font-family: var(--serif); font-size: 1.2rem; font-weight: 500; letter-spacing: 0.04em; color: var(--gold); }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a { font-size: 0.75rem; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: var(--dim); transition: color 0.3s; }
+  .nav-links a:hover { color: var(--white); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+  .hamburger span { display: block; width: 22px; height: 1.5px; background: var(--white); transition: all 0.3s; }
+  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4.5px, 4.5px); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4.5px, -4.5px); }
+  .mobile-menu {
+    display: none; position: fixed; inset: 0;
+    background: rgba(10,10,10,0.97); z-index: 190; flex-direction: column;
+    align-items: center; justify-content: center; gap: 2.5rem;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a { font-family: var(--serif); font-size: 2rem; color: var(--white); letter-spacing: 0.04em; }
+  .mobile-menu a:hover { color: var(--gold); }
+  @media (max-width: 768px) {
+    .nav-links { display: none; } .hamburger { display: flex; } nav { padding: 1.2rem 1.5rem; }
+  }
+  section { padding: 6rem 2rem; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-label { font-size: 0.65rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
+  .section-title { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 300; line-height: 1.1; margin-bottom: 1.5rem; }
+  .gold-rule { width: 60px; height: 1px; background: var(--gold); margin: 1.5rem 0; }
+  .gold-rule.center { margin-left: auto; margin-right: auto; }
+  .float-btn {
+    position: fixed; bottom: 2rem; right: 2rem; z-index: 300;
+    background: var(--gold); color: var(--black);
+    font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600;
+    padding: 0.9rem 1.8rem; box-shadow: 0 4px 20px rgba(201,168,76,0.35); transition: all 0.3s;
+  }
+  .float-btn:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 6px 28px rgba(201,168,76,0.5); }
+  .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+  .fade-up.delay-1 { transition-delay: 0.1s; } .fade-up.delay-2 { transition-delay: 0.2s; }
+  .fade-up.delay-3 { transition-delay: 0.3s; } .fade-up.delay-4 { transition-delay: 0.4s; }
+  footer { background: var(--black); border-top: 1px solid var(--border); padding: 2.5rem 2rem; text-align: center; }
+  .footer-logo { font-family: var(--serif); font-size: 1.3rem; color: var(--gold); margin-bottom: 0.6rem; }
+  .footer-copy { font-size: 0.7rem; color: var(--dim); letter-spacing: 0.08em; }
+  .footer-nav { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1.2rem; flex-wrap: wrap; }
+  .footer-nav a { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); transition: color 0.3s; }
+  .footer-nav a:hover { color: var(--gold); }
+
+
+    #hero {
+      position: relative; height: 100vh; min-height: 600px;
+      display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
+      padding-bottom: 7rem;
+    }
+    #hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,10,10,0.15) 0%, rgba(10,10,10,0.6) 55%, rgba(10,10,10,0.92) 100%); }
+    .hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
+    .hero-content { position: relative; z-index: 2; text-align: center; padding: 0 2rem; }
+    .hero-eyebrow { font-size: 0.65rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .hero-name { font-family: var(--serif); font-size: clamp(3.5rem, 9vw, 7.5rem); font-weight: 300; line-height: 1; margin-bottom: 0.8rem; }
+    .hero-style { font-family: var(--serif); font-size: clamp(1rem, 2.5vw, 1.4rem); font-style: italic; color: rgba(245,245,240,0.65); }
+
+    #about { background: var(--surface); }
+    .about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 5rem; align-items: start; }
+    .about-text p { color: rgba(245,245,240,0.75); line-height: 1.95; margin-bottom: 1.5rem; font-size: 0.95rem; }
+    .style-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+    .style-tag { font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.28rem 0.8rem; border: 1px solid var(--border); color: var(--dim); }
+    .ig-link { display: inline-flex; align-items: center; gap: 0.6rem; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); border: 1px solid rgba(201,168,76,0.3); padding: 0.65rem 1.4rem; transition: all 0.3s; margin-right: 0.8rem; margin-top: 1rem; }
+    .ig-link:hover { background: var(--gold); color: var(--black); }
+    .about-sidebar { display: flex; flex-direction: column; gap: 2rem; }
+    .sidebar-block { background: var(--surface-2); border: 1px solid var(--border); padding: 1.8rem; }
+    .sidebar-block h4 { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
+    .sidebar-block p { font-size: 0.85rem; color: var(--dim); line-height: 1.6; }
+    .other-artist-link { display: flex; justify-content: space-between; align-items: center; padding: 0.7rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--dim); transition: color 0.3s; }
+    .other-artist-link:last-child { border-bottom: none; }
+    .other-artist-link:hover { color: var(--gold); }
+    .other-artist-link .arrow { color: var(--gold); }
+    @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+
+    #gallery { background: var(--black); }
+    .gallery-header { text-align: center; margin-bottom: 3rem; }
+    .gallery-masonry { columns: 3; column-gap: 0.7rem; }
+    .g-item { break-inside: avoid; margin-bottom: 0.7rem; overflow: hidden; }
+    .g-item img { width: 100%; display: block; transition: transform 0.5s; }
+    .g-item:hover img { transform: scale(1.04); }
+    @media (max-width: 768px) { .gallery-masonry { columns: 2; } }
+    @media (max-width: 480px) { .gallery-masonry { columns: 1; } }
+
+    #booking { background: var(--surface); }
+    .booking-inner { max-width: 680px; margin: 0 auto; text-align: center; }
+    .booking-inner p { color: rgba(245,245,240,0.7); margin-bottom: 2rem; font-size: 0.95rem; line-height: 1.9; }
+    .book-btn { display: inline-block; padding: 1rem 3rem; background: var(--gold); color: var(--black); font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; transition: all 0.3s; margin-bottom: 1rem; }
+    .book-btn:hover { background: var(--gold-light); transform: translateY(-2px); }
+    .alt-book { font-size: 0.78rem; color: var(--dim); }
+    .alt-book a { color: var(--gold); }
+
+  </style>
+</head>
+<body>
+<nav id="main-nav">
+  <a class="nav-logo" href="../index.html">Blessed Tattoo Studio</a>
+  <div class="nav-links">
+    <a href="../artists/index.html">Artists</a>
+    <a href="../gallery.html">Gallery</a>
+    <a href="../reviews.html">Reviews</a>
+    <a href="../booking.html">Book</a>
+  </div>
+  <div class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="../index.html" onclick="closeMobile()">Home</a>
+  <a href="../artists/index.html" onclick="closeMobile()">Artists</a>
+  <a href="../gallery.html" onclick="closeMobile()">Gallery</a>
+  <a href="../reviews.html" onclick="closeMobile()">Reviews</a>
+  <a href="../booking.html" onclick="closeMobile()">Book</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg" style="background-image:url('../img/thejcink_1.jpg');"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Featured Artist · Blessed Tattoo Studio</p>
+    <h1 class="hero-name">JC INK TATTOO</h1>
+    <p class="hero-style">Neo Traditional</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-text fade-up">
+        <p class="section-label">Featured Artist</p>
+        <h2 class="section-title">JC INK TATTOO</h2>
+        <div class="style-tags">
+          <span class="style-tag">Neo Traditional</span>
+          <span class="style-tag" style="color:var(--gold);border-color:rgba(201,168,76,0.3);">Featured Artist</span>
+        </div>
+        <div class="gold-rule"></div>
+        <p># JC INK TATTOO</p>
+        <p>JC INK TATTOO is an award-winning tattoo artist based in Houston, Texas, who has mastered the art of neo-traditional tattooing with exceptional versatility across full color realism and black and gray work. With roots connecting to Cuban heritage and a studio presence in the vibrant River Oaks neighborhood, JC INK has built a reputation for delivering striking, meticulously crafted pieces that showcase both technical precision and artistic vision.</p>
+        <a href="https://www.instagram.com/thejcink/" target="_blank" rel="noopener" class="ig-link">@thejcink</a>
+        <a href="../booking.html" class="ig-link" style="background:var(--gold);color:var(--black);border-color:var(--gold);">Book Now</a>
+      </div>
+      <div class="about-sidebar fade-up delay-2">
+        <div class="sidebar-block">
+          <h4>Specialties</h4>
+          <p>Neo Traditional · Custom Tattoos · Consultation available</p>
+        </div>
+        <div class="sidebar-block">
+          <h4>Studio</h4>
+          <p>Blessed Tattoo Studio<br>4701 Richmond Ave<br>Houston, TX 77027</p>
+        </div>
+        <div class="sidebar-block">
+          <h4>Also at Blessed</h4>
+          <a href="./michaelsosaink.html" class="other-artist-link"><span>MICHAEL SOSA</span><span class="arrow">→</span></a><a href="./jovastattoo.html" class="other-artist-link"><span>𝕵𝖔𝖛𝖆𝖘 𝕿𝖆𝖙𝖙𝖔𝖔</span><span class="arrow">→</span></a><a href="./yesytattoo.html" class="other-artist-link"><span>⚜️YESY TATTOO⚜️</span><span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="section-inner">
+    <div class="gallery-header fade-up">
+      <p class="section-label">Portfolio</p>
+      <h2 class="section-title">Work by JC</h2>
+      <div class="gold-rule center"></div>
+    </div>
+    <div class="gallery-masonry">
+
+      <div class="g-item fade-up delay-1"><img src="../img/thejcink_1.jpg" alt="JC INK TATTOO tattoo" loading="lazy" /></div>
+      <div class="g-item fade-up delay-2"><img src="../img/thejcink_2.jpg" alt="JC INK TATTOO tattoo" loading="lazy" /></div>
+      <div class="g-item fade-up delay-3"><img src="../img/thejcink_3.jpg" alt="JC INK TATTOO tattoo" loading="lazy" /></div>
+      <div class="g-item fade-up delay-4"><img src="../img/thejcink_4.jpg" alt="JC INK TATTOO tattoo" loading="lazy" /></div>
+      <div class="g-item fade-up delay-1"><img src="../img/thejcink_5.jpg" alt="JC INK TATTOO tattoo" loading="lazy" /></div>
+      <div class="g-item fade-up delay-2"><img src="../img/thejcink_6.jpg" alt="JC INK TATTOO tattoo" loading="lazy" /></div>
+      <div class="g-item fade-up delay-3"><img src="../img/thejcink_7.jpg" alt="JC INK TATTOO tattoo" loading="lazy" /></div>
+      <div class="g-item fade-up delay-4"><img src="../img/thejcink_8.jpg" alt="JC INK TATTOO tattoo" loading="lazy" /></div>
+      <div class="g-item fade-up delay-1"><img src="../img/thejcink_9.jpg" alt="JC INK TATTOO tattoo" loading="lazy" /></div>
+      <div class="g-item fade-up delay-2"><img src="../img/thejcink_10.jpg" alt="JC INK TATTOO tattoo" loading="lazy" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+  <div class="section-inner">
+    <div class="booking-inner fade-up">
+      <p class="section-label">Ready to Book?</p>
+      <h2 class="section-title">Work with JC</h2>
+      <div class="gold-rule center"></div>
+      <p>Reach out to start the conversation. Whether you have a fully formed concept or just a feeling, JC is here to help you realize your vision.</p>
+      <a href="../booking.html" class="book-btn">Request a Consultation</a>
+      <p class="alt-book">Or DM directly: <a href="https://www.instagram.com/thejcink/" target="_blank" rel="noopener">@thejcink</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="footer-logo">Blessed Tattoo Studio</p>
+  <nav class="footer-nav">
+    <a href="../artists/index.html">Artists</a>
+    <a href="../gallery.html">Gallery</a>
+    <a href="../reviews.html">Reviews</a>
+    <a href="../booking.html">Book</a>
+  </nav>
+  <p class="footer-copy">
+    4701 Richmond Ave, Houston, TX 77027 &nbsp;·&nbsp;
+    <a href="https://www.instagram.com/blessedtattoohtx/" target="_blank" rel="noopener" style="color:var(--dim);">@blessedtattoohtx</a>
+    &nbsp;·&nbsp; (346) 202-6107 &nbsp;·&nbsp; © 2025 Blessed Tattoo Studio
+  </p>
+</footer>
+<a href="../booking.html" class="float-btn">Book Now</a>
+
+<script>
+  function applyLang() { document.documentElement.lang = 'en'; }
+  document.addEventListener('DOMContentLoaded', applyLang);
+
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => {
+    if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+  }
+  function closeMobile() {
+    if (hamburger) hamburger.classList.remove('open');
+    if (mobileMenu) mobileMenu.classList.remove('open');
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
