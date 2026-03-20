@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blessed Tattoo Studio — World Class Tattoo Artists in the Heart of River Oaks</title>
+  <meta name="description" content="Blessed Tattoo Studio — Premium tattoo studio in Houston's River Oaks. World class tattoo artists. 4701 Richmond Ave. ★ 4.6 (216 reviews)." />
+  <link rel="canonical" href="https://eternowebstudio.com/blessedtattoohtx/" />
+  <meta property="og:title" content="Blessed Tattoo Studio — World Class Tattoo Artists in the Heart of River Oaks" />
+  <meta property="og:description" content="Blessed Tattoo Studio — Premium tattoo studio in Houston's River Oaks. World class tattoo artists. 4701 Richmond Ave. ★ 4.6 (216 reviews)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eternowebstudio.com/blessedtattoohtx/" />
+  <meta property="og:image" content="https://eternowebstudio.com/blessedtattoohtx/img/google_1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blessed Tattoo Studio — World Class Tattoo Artists in the Heart of River Oaks" />
+  <meta name="twitter:image" content="https://eternowebstudio.com/blessedtattoohtx/img/google_1.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --black: #0a0a0a; --surface: #111111; --surface-2: #161616;
+    --gold: #C9A84C; --gold-light: #e2c47a; --gold-dim: rgba(201,168,76,0.12);
+    --white: #f5f5f0; --dim: #888; --border: rgba(201,168,76,0.15);
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Inter', 'Helvetica Neue', sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { background: var(--black); color: var(--white); font-family: var(--sans); font-size: 16px; line-height: 1.7; overflow-x: hidden; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.4rem 2.5rem;
+    transition: background 0.4s ease, backdrop-filter 0.4s ease;
+  }
+  nav.scrolled {
+    background: rgba(10,10,10,0.93); backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border);
+  }
+  .nav-logo { font-family: var(--serif); font-size: 1.2rem; font-weight: 500; letter-spacing: 0.04em; color: var(--gold); }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a { font-size: 0.75rem; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: var(--dim); transition: color 0.3s; }
+  .nav-links a:hover { color: var(--white); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+  .hamburger span { display: block; width: 22px; height: 1.5px; background: var(--white); transition: all 0.3s; }
+  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4.5px, 4.5px); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4.5px, -4.5px); }
+  .mobile-menu {
+    display: none; position: fixed; inset: 0;
+    background: rgba(10,10,10,0.97); z-index: 190; flex-direction: column;
+    align-items: center; justify-content: center; gap: 2.5rem;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a { font-family: var(--serif); font-size: 2rem; color: var(--white); letter-spacing: 0.04em; }
+  .mobile-menu a:hover { color: var(--gold); }
+  @media (max-width: 768px) {
+    .nav-links { display: none; } .hamburger { display: flex; } nav { padding: 1.2rem 1.5rem; }
+  }
+  section { padding: 6rem 2rem; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-label { font-size: 0.65rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
+  .section-title { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 300; line-height: 1.1; margin-bottom: 1.5rem; }
+  .gold-rule { width: 60px; height: 1px; background: var(--gold); margin: 1.5rem 0; }
+  .gold-rule.center { margin-left: auto; margin-right: auto; }
+  .float-btn {
+    position: fixed; bottom: 2rem; right: 2rem; z-index: 300;
+    background: var(--gold); color: var(--black);
+    font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600;
+    padding: 0.9rem 1.8rem; box-shadow: 0 4px 20px rgba(201,168,76,0.35); transition: all 0.3s;
+  }
+  .float-btn:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 6px 28px rgba(201,168,76,0.5); }
+  .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+  .fade-up.delay-1 { transition-delay: 0.1s; } .fade-up.delay-2 { transition-delay: 0.2s; }
+  .fade-up.delay-3 { transition-delay: 0.3s; } .fade-up.delay-4 { transition-delay: 0.4s; }
+  footer { background: var(--black); border-top: 1px solid var(--border); padding: 2.5rem 2rem; text-align: center; }
+  .footer-logo { font-family: var(--serif); font-size: 1.3rem; color: var(--gold); margin-bottom: 0.6rem; }
+  .footer-copy { font-size: 0.7rem; color: var(--dim); letter-spacing: 0.08em; }
+  .footer-nav { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1.2rem; flex-wrap: wrap; }
+  .footer-nav a { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); transition: color 0.3s; }
+  .footer-nav a:hover { color: var(--gold); }
+
+
+    #hero {
+      position: relative; height: 100vh; min-height: 620px;
+      background: url('./img/google_1.jpg') center center / cover no-repeat;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+    }
+    #hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,10,10,0.35) 0%, rgba(10,10,10,0.65) 60%, rgba(10,10,10,0.88) 100%); }
+    .hero-content { position: relative; z-index: 2; padding: 0 2rem; max-width: 800px; }
+    .hero-rating { display: inline-block; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.3); padding: 0.45rem 1.2rem; border-radius: 2px; margin-bottom: 1.5rem; }
+    .hero-title { font-family: var(--serif); font-size: clamp(3rem, 8vw, 7rem); font-weight: 300; line-height: 1.02; letter-spacing: -0.01em; margin-bottom: 1rem; }
+    .hero-tagline { font-family: var(--serif); font-size: clamp(1rem, 2.5vw, 1.4rem); font-style: italic; color: rgba(245,245,240,0.7); margin-bottom: 2.5rem; }
+    .hero-cta { display: inline-block; padding: 0.9rem 2.8rem; border: 1px solid var(--gold); color: var(--gold); font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; transition: all 0.3s; margin-right: 1rem; }
+    .hero-cta:hover { background: var(--gold); color: var(--black); }
+    .hero-ig { display: inline-block; padding: 0.9rem 2.8rem; border: 1px solid rgba(245,245,240,0.3); color: rgba(245,245,240,0.7); font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; transition: all 0.3s; }
+    .hero-ig:hover { border-color: var(--white); color: var(--white); }
+    @media (max-width: 600px) { .hero-ig { display: none; } }
+
+    #about { background: var(--surface); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .about-text p { color: rgba(245,245,240,0.75); line-height: 1.95; margin-bottom: 1.4rem; font-size: 0.95rem; }
+    .about-image img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+    @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+
+    #artists { background: var(--black); }
+    .artists-header { text-align: center; margin-bottom: 3.5rem; }
+    .artists-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+    @media (max-width: 900px) { .artists-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 500px) { .artists-grid { grid-template-columns: 1fr; } }
+    .artist-card { background: var(--surface-2); border: 1px solid var(--border); transition: transform 0.35s, border-color 0.35s; overflow: hidden; }
+    .artist-card:hover { transform: translateY(-6px); border-color: rgba(201,168,76,0.4); }
+    .artist-card-img { aspect-ratio: 3/4; overflow: hidden; }
+    .artist-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+    .artist-card:hover .artist-card-img img { transform: scale(1.05); }
+    .artist-card-body { padding: 1.4rem; }
+    .artist-card-name { font-family: var(--serif); font-size: 1.3rem; margin-bottom: 0.5rem; }
+    .artist-card-styles { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.2rem; }
+    .style-tag { font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.25rem 0.7rem; border: 1px solid var(--border); color: var(--dim); }
+    .artist-card-link { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 2px; transition: border-color 0.3s; }
+    .artist-card-link:hover { border-color: var(--gold); }
+
+    #gallery-preview { background: var(--surface); }
+    .gallery-header { text-align: center; margin-bottom: 3rem; }
+    .gallery-masonry { columns: 4; column-gap: 0.7rem; }
+    .g-item { break-inside: avoid; margin-bottom: 0.7rem; overflow: hidden; }
+    .g-item img { width: 100%; display: block; transition: transform 0.5s; }
+    .g-item:hover img { transform: scale(1.04); }
+    @media (max-width: 900px) { .gallery-masonry { columns: 3; } }
+    @media (max-width: 600px) { .gallery-masonry { columns: 2; } }
+
+    #reviews-preview { background: var(--black); }
+    .reviews-header { text-align: center; margin-bottom: 3rem; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+    @media (max-width: 768px) { .reviews-grid { grid-template-columns: 1fr; } }
+    .review-card { background: var(--surface-2); border: 1px solid var(--border); padding: 2rem; }
+    .review-stars { color: var(--gold); font-size: 1rem; margin-bottom: 1rem; letter-spacing: 0.1em; }
+    .review-text { font-family: var(--serif); font-size: 1.05rem; font-style: italic; color: rgba(245,245,240,0.8); line-height: 1.7; margin-bottom: 1.2rem; }
+    .review-author { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); }
+
+    #location { background: var(--surface); }
+    .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .contact-item { display: flex; gap: 1rem; margin-bottom: 1.2rem; align-items: flex-start; }
+    .contact-item-label { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); width: 80px; flex-shrink: 0; padding-top: 3px; }
+    .contact-item-value { font-size: 0.9rem; color: rgba(245,245,240,0.75); line-height: 1.6; }
+    .contact-item-value a:hover { color: var(--gold); }
+    .map-wrap { border-radius: 4px; overflow: hidden; border: 1px solid var(--border); }
+    .map-wrap iframe { width: 100%; height: 340px; border: 0; display: block; filter: grayscale(80%) invert(90%) contrast(85%); }
+    @media (max-width: 768px) { .location-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+    .ig-link {
+      display: inline-flex; align-items: center; gap: 0.6rem; margin-top: 1.5rem;
+      font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.3); padding: 0.65rem 1.4rem; transition: all 0.3s;
+    }
+    .ig-link:hover { background: var(--gold); color: var(--black); }
+
+  </style>
+</head>
+<body>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"TattooParlor",
+  "name":"Blessed Tattoo Studio","url":"https://eternowebstudio.com/blessedtattoohtx/",
+  "image":"https://eternowebstudio.com/blessedtattoohtx/img/google_1.jpg",
+  "telephone":"(346) 202-6107",
+  "address":{"@type":"PostalAddress","streetAddress":"4701 Richmond Ave","addressLocality":"Houston","addressRegion":"TX","postalCode":"77027","addressCountry":"US"},
+  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"12:00","closes":"20:00"}],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"216"},
+  "sameAs":["https://www.instagram.com/blessedtattoohtx/"]
+}
+</script>
+
+<nav id="main-nav">
+  <a class="nav-logo" href="./index.html">Blessed Tattoo Studio</a>
+  <div class="nav-links">
+    <a href="./artists/index.html">Artists</a>
+    <a href="./gallery.html">Gallery</a>
+    <a href="./reviews.html">Reviews</a>
+    <a href="./booking.html">Book</a>
+  </div>
+  <div class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="./index.html" onclick="closeMobile()">Home</a>
+  <a href="./artists/index.html" onclick="closeMobile()">Artists</a>
+  <a href="./gallery.html" onclick="closeMobile()">Gallery</a>
+  <a href="./reviews.html" onclick="closeMobile()">Reviews</a>
+  <a href="./booking.html" onclick="closeMobile()">Book</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-rating">★ 4.6 · 216 Google Reviews</div>
+    <h1 class="hero-title">Blessed<br>Tattoo<br>Studio</h1>
+    <p class="hero-tagline">World Class Tattoo Artists in the Heart of River Oaks</p>
+    <a href="./booking.html" class="hero-cta">Book a Session</a>
+    <a href="https://www.instagram.com/blessedtattoohtx/" target="_blank" rel="noopener" class="hero-ig">@blessedtattoohtx</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-text fade-up">
+        <p class="section-label">About the Studio</p>
+        <h2 class="section-title">Where Art Meets<br>the Skin</h2>
+        <div class="gold-rule"></div>
+        <p>Blessed Tattoo Studio sits at the heart of Houston's prestigious River Oaks district, a place where world-class tattooing is not an aspiration — it's a standard. Since opening our doors at 4701 Richmond Ave, we have built a collective of artists whose skill, vision, and dedication to craft represent the finest the city has to offer. Every piece that leaves this studio carries with it a commitment to excellence that shows in every line.</p>
+        <p>From bold blackwork and intricate fine line to color realism and everything in between, our resident and featured artists bring a breadth of expertise rarely found under one roof. We welcome walk-ins daily from noon to 8 PM, and we're here seven days a week because great art doesn't keep a Monday-to-Friday schedule. Come in, meet the team, and let's create something extraordinary together.</p>
+      </div>
+      <div class="about-image fade-up delay-2">
+        <img src="./img/google_2.jpg" alt="Blessed Tattoo Studio — Houston, TX" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTISTS -->
+<section id="artists">
+  <div class="section-inner">
+    <div class="artists-header fade-up">
+      <p class="section-label">The Collective</p>
+      <h2 class="section-title">Our Artists</h2>
+      <div class="gold-rule center"></div>
+    </div>
+    <div class="artists-grid">
+
+      <div class="artist-card fade-up delay-1">
+        <div class="artist-card-img"><img src="./img/michaelsosaink_1.jpg" alt="MICHAEL SOSA — Tattoo Artist" loading="lazy" /></div>
+        <div class="artist-card-body">
+          <h3 class="artist-card-name">MICHAEL SOSA</h3>
+          <div class="artist-card-styles">
+            <span class="style-tag">Realism</span>
+            <span class="style-tag" style="color:var(--gold);border-color:rgba(201,168,76,0.3);">Resident Artist</span>
+          </div>
+          <a href="./artists/michaelsosaink.html" class="artist-card-link">View Artist →</a>
+        </div>
+      </div>
+      <div class="artist-card fade-up delay-2">
+        <div class="artist-card-img"><img src="./img/jovastattoo_1.jpg" alt="𝕵𝖔𝖛𝖆𝖘 𝕿𝖆𝖙𝖙𝖔𝖔 — Tattoo Artist" loading="lazy" /></div>
+        <div class="artist-card-body">
+          <h3 class="artist-card-name">𝕵𝖔𝖛𝖆𝖘 𝕿𝖆𝖙𝖙𝖔𝖔</h3>
+          <div class="artist-card-styles">
+            <span class="style-tag">Realism</span>
+            <span class="style-tag" style="color:var(--gold);border-color:rgba(201,168,76,0.3);">Resident Artist</span>
+          </div>
+          <a href="./artists/jovastattoo.html" class="artist-card-link">View Artist →</a>
+        </div>
+      </div>
+      <div class="artist-card fade-up delay-3">
+        <div class="artist-card-img"><img src="./img/yesytattoo_1.jpg" alt="⚜️YESY TATTOO⚜️ — Tattoo Artist" loading="lazy" /></div>
+        <div class="artist-card-body">
+          <h3 class="artist-card-name">⚜️YESY TATTOO⚜️</h3>
+          <div class="artist-card-styles">
+            <span class="style-tag">Realism</span>
+            <span class="style-tag" style="color:var(--gold);border-color:rgba(201,168,76,0.3);">Featured Artist</span>
+          </div>
+          <a href="./artists/yesytattoo.html" class="artist-card-link">View Artist →</a>
+        </div>
+      </div>
+      <div class="artist-card fade-up delay-4">
+        <div class="artist-card-img"><img src="./img/thejcink_1.jpg" alt="JC INK TATTOO — Tattoo Artist" loading="lazy" /></div>
+        <div class="artist-card-body">
+          <h3 class="artist-card-name">JC INK TATTOO</h3>
+          <div class="artist-card-styles">
+            <span class="style-tag">Neo Traditional</span>
+            <span class="style-tag" style="color:var(--gold);border-color:rgba(201,168,76,0.3);">Featured Artist</span>
+          </div>
+          <a href="./artists/thejcink.html" class="artist-card-link">View Artist →</a>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:3rem;" class="fade-up">
+      <a href="./artists/index.html" style="display:inline-block;border:1px solid var(--border);padding:0.85rem 2.5rem;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--dim);transition:all 0.3s;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--white)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--dim)'">View All Artists</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY PREVIEW -->
+<section id="gallery-preview">
+  <div class="section-inner">
+    <div class="gallery-header fade-up">
+      <p class="section-label">Portfolio</p>
+      <h2 class="section-title">The Work</h2>
+      <div class="gold-rule center"></div>
+    </div>
+    <div class="gallery-masonry">
+
+      <div class="g-item fade-up"><img src="./img/michaelsosaink_1.jpg" alt="Tattoo by MICHAEL SOSA" loading="lazy" /></div>
+      <div class="g-item fade-up"><img src="./img/michaelsosaink_2.jpg" alt="Tattoo by MICHAEL SOSA" loading="lazy" /></div>
+      <div class="g-item fade-up"><img src="./img/jovastattoo_1.jpg" alt="Tattoo by 𝕵𝖔𝖛𝖆𝖘 𝕿𝖆𝖙𝖙𝖔𝖔" loading="lazy" /></div>
+      <div class="g-item fade-up"><img src="./img/jovastattoo_2.jpg" alt="Tattoo by 𝕵𝖔𝖛𝖆𝖘 𝕿𝖆𝖙𝖙𝖔𝖔" loading="lazy" /></div>
+      <div class="g-item fade-up"><img src="./img/yesytattoo_1.jpg" alt="Tattoo by ⚜️YESY TATTOO⚜️" loading="lazy" /></div>
+      <div class="g-item fade-up"><img src="./img/yesytattoo_2.jpg" alt="Tattoo by ⚜️YESY TATTOO⚜️" loading="lazy" /></div>
+      <div class="g-item fade-up"><img src="./img/thejcink_1.jpg" alt="Tattoo by JC INK TATTOO" loading="lazy" /></div>
+      <div class="g-item fade-up"><img src="./img/thejcink_2.jpg" alt="Tattoo by JC INK TATTOO" loading="lazy" /></div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;" class="fade-up">
+      <a href="./gallery.html" style="display:inline-block;border:1px solid var(--border);padding:0.85rem 2.5rem;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--dim);transition:all 0.3s;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--white)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--dim)'">View Full Gallery</a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS PREVIEW -->
+<section id="reviews-preview">
+  <div class="section-inner">
+    <div class="reviews-header fade-up">
+      <p class="section-label">Client Stories</p>
+      <h2 class="section-title">What People Say</h2>
+      <div class="gold-rule center"></div>
+      <p style="color:var(--dim);font-size:0.9rem;margin-top:0.5rem;">★ 4.6 out of 5 · 216 Google Reviews</p>
+    </div>
+    <div class="reviews-grid">
+
+      <div class="review-card fade-up">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"The second I walked in, I knew I chose the right place. I’d spent a year looking for someone I trusted to do my cover-up, and I’m so glad I found Ranger on Instagram. The shop is beautiful and spotless, and every artist and staff member was incredibly respectful and welcoming. Th"</p>
+        <p class="review-author">— Brandy</p>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"I got a tattoo from Michael Sosa, This man is a beast!!! I came in for my consultation, the studio is super nice, well light, friendly, great vibes. i came to Michael with an idea and he turned it into a master piece. when it was time for the tattoo session, he got to work, we st"</p>
+        <p class="review-author">— Alex Castro</p>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"I had an amazing experience at this tattoo shop, and Fernando absolutely nailed it. From the moment I walked in, he made me feel comfortable and really took the time to listen to what I wanted. His attention to detail, creativity, and professionalism really stand out. The shop wa"</p>
+        <p class="review-author">— Tais Ordonez</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;" class="fade-up">
+      <a href="./reviews.html" style="display:inline-block;border:1px solid var(--border);padding:0.85rem 2.5rem;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--dim);transition:all 0.3s;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--white)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--dim)'">Read All Reviews</a>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location">
+  <div class="section-inner">
+    <div class="location-grid">
+      <div class="fade-up">
+        <p class="section-label">Find Us</p>
+        <h2 class="section-title">Location &amp; Hours</h2>
+        <div class="gold-rule"></div>
+        <div class="contact-item">
+          <span class="contact-item-label">Address</span>
+          <span class="contact-item-value">4701 Richmond Ave<br>Houston, TX 77027<br><em style="color:var(--dim);">River Oaks District</em></span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item-label">Hours</span>
+          <span class="contact-item-value">Mon – Sun: 12:00 PM – 8:00 PM<br><em style="color:var(--dim);">Walk-ins welcome daily</em></span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item-label">Phone</span>
+          <span class="contact-item-value"><a href="tel:3462026107">(346) 202-6107</a></span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item-label">Instagram</span>
+          <span class="contact-item-value">
+            <a href="https://www.instagram.com/blessedtattoohtx/" target="_blank" rel="noopener">@blessedtattoohtx</a>
+          </span>
+        </div>
+        <a href="https://www.instagram.com/blessedtattoohtx/" target="_blank" rel="noopener" class="ig-link">DM Us on Instagram</a>
+      </div>
+      <div class="fade-up delay-2">
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.1!2d-95.47!3d29.74!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c3bbd7f5f5f5%3A0x0!2sBiessed%20Tattoo%20Studio!5e0!3m2!1sen!2sus!4v1700000000000&q=4701+Richmond+Ave+Houston+TX+77027" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="footer-logo">Blessed Tattoo Studio</p>
+  <nav class="footer-nav">
+    <a href="./artists/index.html">Artists</a>
+    <a href="./gallery.html">Gallery</a>
+    <a href="./reviews.html">Reviews</a>
+    <a href="./booking.html">Book</a>
+  </nav>
+  <p class="footer-copy">
+    4701 Richmond Ave, Houston, TX 77027 &nbsp;·&nbsp;
+    <a href="https://www.instagram.com/blessedtattoohtx/" target="_blank" rel="noopener" style="color:var(--dim);">@blessedtattoohtx</a>
+    &nbsp;·&nbsp; (346) 202-6107 &nbsp;·&nbsp; © 2025 Blessed Tattoo Studio
+  </p>
+</footer>
+<a href="./booking.html" class="float-btn">Book Now</a>
+
+<script>
+  function applyLang() { document.documentElement.lang = 'en'; }
+  document.addEventListener('DOMContentLoaded', applyLang);
+
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => {
+    if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+  }
+  function closeMobile() {
+    if (hamburger) hamburger.classList.remove('open');
+    if (mobileMenu) mobileMenu.classList.remove('open');
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
