@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Session — Blessed Tattoo Studio</title>
+  <meta name="description" content="Book a tattoo session at Blessed Tattoo Studio in Houston, TX. Choose your artist and submit an inquiry." />
+  <link rel="canonical" href="https://eternowebstudio.com/blessedtattoohtx/booking.html" />
+  <meta property="og:title" content="Book a Session — Blessed Tattoo Studio" />
+  <meta property="og:description" content="Book a tattoo session at Blessed Tattoo Studio in Houston, TX. Choose your artist and submit an inquiry." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eternowebstudio.com/blessedtattoohtx/booking.html" />
+  <meta property="og:image" content="https://eternowebstudio.com/blessedtattoohtx/img/google_1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Book a Session — Blessed Tattoo Studio" />
+  <meta name="twitter:image" content="https://eternowebstudio.com/blessedtattoohtx/img/google_1.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --black: #0a0a0a; --surface: #111111; --surface-2: #161616;
+    --gold: #C9A84C; --gold-light: #e2c47a; --gold-dim: rgba(201,168,76,0.12);
+    --white: #f5f5f0; --dim: #888; --border: rgba(201,168,76,0.15);
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Inter', 'Helvetica Neue', sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { background: var(--black); color: var(--white); font-family: var(--sans); font-size: 16px; line-height: 1.7; overflow-x: hidden; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.4rem 2.5rem;
+    transition: background 0.4s ease, backdrop-filter 0.4s ease;
+  }
+  nav.scrolled {
+    background: rgba(10,10,10,0.93); backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border);
+  }
+  .nav-logo { font-family: var(--serif); font-size: 1.2rem; font-weight: 500; letter-spacing: 0.04em; color: var(--gold); }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a { font-size: 0.75rem; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: var(--dim); transition: color 0.3s; }
+  .nav-links a:hover { color: var(--white); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+  .hamburger span { display: block; width: 22px; height: 1.5px; background: var(--white); transition: all 0.3s; }
+  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4.5px, 4.5px); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4.5px, -4.5px); }
+  .mobile-menu {
+    display: none; position: fixed; inset: 0;
+    background: rgba(10,10,10,0.97); z-index: 190; flex-direction: column;
+    align-items: center; justify-content: center; gap: 2.5rem;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a { font-family: var(--serif); font-size: 2rem; color: var(--white); letter-spacing: 0.04em; }
+  .mobile-menu a:hover { color: var(--gold); }
+  @media (max-width: 768px) {
+    .nav-links { display: none; } .hamburger { display: flex; } nav { padding: 1.2rem 1.5rem; }
+  }
+  section { padding: 6rem 2rem; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-label { font-size: 0.65rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
+  .section-title { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 300; line-height: 1.1; margin-bottom: 1.5rem; }
+  .gold-rule { width: 60px; height: 1px; background: var(--gold); margin: 1.5rem 0; }
+  .gold-rule.center { margin-left: auto; margin-right: auto; }
+  .float-btn {
+    position: fixed; bottom: 2rem; right: 2rem; z-index: 300;
+    background: var(--gold); color: var(--black);
+    font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600;
+    padding: 0.9rem 1.8rem; box-shadow: 0 4px 20px rgba(201,168,76,0.35); transition: all 0.3s;
+  }
+  .float-btn:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 6px 28px rgba(201,168,76,0.5); }
+  .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+  .fade-up.delay-1 { transition-delay: 0.1s; } .fade-up.delay-2 { transition-delay: 0.2s; }
+  .fade-up.delay-3 { transition-delay: 0.3s; } .fade-up.delay-4 { transition-delay: 0.4s; }
+  footer { background: var(--black); border-top: 1px solid var(--border); padding: 2.5rem 2rem; text-align: center; }
+  .footer-logo { font-family: var(--serif); font-size: 1.3rem; color: var(--gold); margin-bottom: 0.6rem; }
+  .footer-copy { font-size: 0.7rem; color: var(--dim); letter-spacing: 0.08em; }
+  .footer-nav { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1.2rem; flex-wrap: wrap; }
+  .footer-nav a { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); transition: color 0.3s; }
+  .footer-nav a:hover { color: var(--gold); }
+
+
+    .page-hero { padding: 10rem 2rem 4rem; background: var(--surface); text-align: center; border-bottom: 1px solid var(--border); }
+    .page-hero h1 { font-family: var(--serif); font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 300; margin-bottom: 1rem; }
+    .page-hero p { color: var(--dim); max-width: 560px; margin: 0 auto; font-size: 0.9rem; }
+    .booking-section { padding: 5rem 2rem; max-width: 900px; margin: 0 auto; }
+    .booking-section h2 { font-family: var(--serif); font-size: 1.8rem; font-weight: 300; margin-bottom: 0.5rem; }
+    .booking-section .sub { color: var(--dim); font-size: 0.85rem; margin-bottom: 2rem; }
+    .artist-picker { display: grid; grid-template-columns: repeat(5,1fr); gap: 1rem; margin-bottom: 3rem; }
+    @media (max-width: 768px) { .artist-picker { grid-template-columns: repeat(2,1fr); } }
+    .artist-option input[type="radio"] { display: none; }
+    .artist-option-card {
+      border: 1px solid var(--border); padding: 1.2rem 0.8rem; text-align: center; cursor: pointer;
+      transition: all 0.3s; background: var(--surface-2);
+    }
+    .artist-option-card img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; margin: 0 auto 0.8rem; border: 2px solid var(--border); }
+    .artist-option-icon { width: 64px; height: 64px; border-radius: 50%; background: var(--surface); border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--gold); margin: 0 auto 0.8rem; }
+    .artist-option-card:hover { border-color: rgba(201,168,76,0.4); }
+    .artist-option input:checked + .artist-option-card { border-color: var(--gold); background: var(--gold-dim); }
+    .artist-option-name { font-family: var(--serif); font-size: 1rem; margin-bottom: 0.25rem; }
+    .artist-option-style { font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.2rem; }
+    .artist-option-role { font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dim); }
+    .booking-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    @media (max-width: 600px) { .booking-form { grid-template-columns: 1fr; } }
+    .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
+    .form-group.full { grid-column: 1 / -1; }
+    .form-group label { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); }
+    .form-group input, .form-group select, .form-group textarea {
+      background: var(--surface-2); border: 1px solid var(--border); color: var(--white);
+      padding: 0.85rem 1rem; font-family: var(--sans); font-size: 0.9rem;
+      transition: border-color 0.3s; resize: vertical;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      outline: none; border-color: var(--gold);
+    }
+    .form-group select option { background: var(--surface-2); }
+    .form-submit { margin-top: 2rem; text-align: center; }
+    .form-submit button {
+      background: var(--gold); color: var(--black); border: none; cursor: pointer;
+      padding: 1rem 3.5rem; font-family: var(--sans); font-size: 0.72rem;
+      letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600;
+      transition: all 0.3s;
+    }
+    .form-submit button:hover { background: var(--gold-light); transform: translateY(-2px); }
+    .ig-alt { margin-top: 1rem; font-size: 0.8rem; color: var(--dim); }
+    .ig-alt a { color: var(--gold); }
+    .ig-alt a:hover { text-decoration: underline; }
+
+  </style>
+</head>
+<body>
+<nav id="main-nav">
+  <a class="nav-logo" href="./index.html">Blessed Tattoo Studio</a>
+  <div class="nav-links">
+    <a href="./artists/index.html">Artists</a>
+    <a href="./gallery.html">Gallery</a>
+    <a href="./reviews.html">Reviews</a>
+    <a href="./booking.html">Book</a>
+  </div>
+  <div class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="./index.html" onclick="closeMobile()">Home</a>
+  <a href="./artists/index.html" onclick="closeMobile()">Artists</a>
+  <a href="./gallery.html" onclick="closeMobile()">Gallery</a>
+  <a href="./reviews.html" onclick="closeMobile()">Reviews</a>
+  <a href="./booking.html" onclick="closeMobile()">Book</a>
+</div>
+<div class="page-hero">
+  <p class="section-label">Schedule Your Session</p>
+  <h1>Book an Artist</h1>
+  <p>Choose your artist below and fill out the form. We'll be in touch to confirm your consultation.</p>
+</div>
+
+<section class="booking-section fade-up">
+  <h2>Select Your Artist</h2>
+  <p class="sub">Choose the artist whose style resonates with your vision, or let us match you.</p>
+  
+  <form id="booking-form" action="https://formspree.io/f/blessedtattoohtx" method="POST">
+    <div class="artist-picker">
+
+        <label class="artist-option">
+          <input type="radio" name="artist" value="MICHAEL SOSA" />
+          <div class="artist-option-card">
+            <img src="./img/michaelsosaink_1.jpg" alt="MICHAEL SOSA" />
+            <div class="artist-option-name">MICHAEL SOSA</div>
+            <div class="artist-option-style">Realism</div>
+            <div class="artist-option-role">Resident Artist</div>
+          </div>
+        </label>
+        <label class="artist-option">
+          <input type="radio" name="artist" value="𝕵𝖔𝖛𝖆𝖘 𝕿𝖆𝖙𝖙𝖔𝖔" />
+          <div class="artist-option-card">
+            <img src="./img/jovastattoo_1.jpg" alt="𝕵𝖔𝖛𝖆𝖘 𝕿𝖆𝖙𝖙𝖔𝖔" />
+            <div class="artist-option-name">𝕵𝖔𝖛𝖆𝖘 𝕿𝖆𝖙𝖙𝖔𝖔</div>
+            <div class="artist-option-style">Realism</div>
+            <div class="artist-option-role">Resident Artist</div>
+          </div>
+        </label>
+        <label class="artist-option">
+          <input type="radio" name="artist" value="⚜️YESY TATTOO⚜️" />
+          <div class="artist-option-card">
+            <img src="./img/yesytattoo_1.jpg" alt="⚜️YESY TATTOO⚜️" />
+            <div class="artist-option-name">⚜️YESY TATTOO⚜️</div>
+            <div class="artist-option-style">Realism</div>
+            <div class="artist-option-role">Featured Artist</div>
+          </div>
+        </label>
+        <label class="artist-option">
+          <input type="radio" name="artist" value="JC INK TATTOO" />
+          <div class="artist-option-card">
+            <img src="./img/thejcink_1.jpg" alt="JC INK TATTOO" />
+            <div class="artist-option-name">JC INK TATTOO</div>
+            <div class="artist-option-style">Neo Traditional</div>
+            <div class="artist-option-role">Featured Artist</div>
+          </div>
+        </label>
+        <label class="artist-option">
+          <input type="radio" name="artist" value="No Preference" checked />
+          <div class="artist-option-card">
+            <div class="artist-option-icon">✦</div>
+            <div class="artist-option-name">No Preference</div>
+            <div class="artist-option-style">We'll match you</div>
+            <div class="artist-option-role">Best fit for your vision</div>
+          </div>
+        </label>
+    </div>
+    
+    <div class="gold-rule" style="margin-bottom:2.5rem;"></div>
+    <h2 style="font-family:var(--serif);font-size:1.8rem;font-weight:300;margin-bottom:0.5rem;">Your Details</h2>
+    <p class="sub">Tell us about your idea and we'll reach out within 24-48 hours.</p>
+    
+    <div class="booking-form">
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required placeholder="Your name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required placeholder="your@email.com" />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone (optional)</label>
+        <input type="tel" id="phone" name="phone" placeholder="(713) 000-0000" />
+      </div>
+      <div class="form-group">
+        <label for="placement">Placement *</label>
+        <input type="text" id="placement" name="placement" required placeholder="e.g. Inner forearm, upper back..." />
+      </div>
+      <div class="form-group full">
+        <label for="vision">Your Vision *</label>
+        <textarea id="vision" name="vision" required rows="5" placeholder="Describe your tattoo idea in as much detail as you like — style, size, elements, mood, references..."></textarea>
+      </div>
+      <div class="form-group full">
+        <label for="references">Reference Links (optional)</label>
+        <input type="text" id="references" name="references" placeholder="Instagram posts, Pinterest links, Google Drive, etc." />
+      </div>
+    </div>
+    
+    <div class="form-submit">
+      <button type="submit">Submit Inquiry</button>
+      <p class="ig-alt">Prefer to DM? Reach us at <a href="https://www.instagram.com/blessedtattoohtx/" target="_blank" rel="noopener">@blessedtattoohtx</a> on Instagram.</p>
+    </div>
+  </form>
+</section>
+
+<footer>
+  <p class="footer-logo">Blessed Tattoo Studio</p>
+  <nav class="footer-nav">
+    <a href="./artists/index.html">Artists</a>
+    <a href="./gallery.html">Gallery</a>
+    <a href="./reviews.html">Reviews</a>
+    <a href="./booking.html">Book</a>
+  </nav>
+  <p class="footer-copy">
+    4701 Richmond Ave, Houston, TX 77027 &nbsp;·&nbsp;
+    <a href="https://www.instagram.com/blessedtattoohtx/" target="_blank" rel="noopener" style="color:var(--dim);">@blessedtattoohtx</a>
+    &nbsp;·&nbsp; (346) 202-6107 &nbsp;·&nbsp; © 2025 Blessed Tattoo Studio
+  </p>
+</footer>
+<a href="./booking.html" class="float-btn">Book Now</a>
+
+<script>
+  function applyLang() { document.documentElement.lang = 'en'; }
+  document.addEventListener('DOMContentLoaded', applyLang);
+
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => {
+    if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+  }
+  function closeMobile() {
+    if (hamburger) hamburger.classList.remove('open');
+    if (mobileMenu) mobileMenu.classList.remove('open');
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+<script>
+  document.getElementById('booking-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const data = new FormData(this);
+    const artist = data.get('artist') || 'No Preference';
+    const name = data.get('name') || '';
+    const email = data.get('email') || '';
+    const phone = data.get('phone') || '';
+    const placement = data.get('placement') || '';
+    const vision = data.get('vision') || '';
+    const refs = data.get('references') || '';
+    const subject = encodeURIComponent(`Tattoo Inquiry - ${name} → ${artist}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nArtist: ${artist}\nPlacement: ${placement}\n\nVision:\n${vision}\n\nReferences:\n${refs}`
+    );
+    window.location.href = `mailto:blessedtattoohtx@gmail.com?subject=${subject}&body=${body}`;
+  });
+</script>
+</body>
+</html>
